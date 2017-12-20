@@ -337,7 +337,7 @@ def showTextScreen(text):
     # This function displays large text in the
     # center of the screen until a key is pressed.
     # Draw the text drop shadow
-    titleSurf, titleRect = makeTextObjs(text, BIGFONT, TEXTSHADOWCOLOR)
+    titleSurf, titleRect = makeTextObjs("Tetris", BIGFONT, TEXTSHADOWCOLOR)
     titleRect.center = (int(WINDOWWIDTH / 2), int(WINDOWHEIGHT / 2))
     DISPLAYSURF.blit(titleSurf, titleRect)
 
